@@ -11,7 +11,6 @@ socket.connect(
   config.Server_Port,
   config.Server_Ip
 );
-console.log(config.Server_Ip, config.Server_Port);
 const action = {
   registration: onRegistration,
   connection: onConnection
@@ -20,7 +19,8 @@ const action = {
 function onRegistration(data) {
   if (data.result === "success") {
     console.log("Registration success");
-    fs.writeFile("./config.json", JSON.stringify({ id: data.id }), err => {
+    config.id = data.id;
+    fs.writeFile("./config.json", JSON.stringify(config), err => {
       if (err) return console.log(err);
       sensorId = data.id;
       console.log("The file was saved!");
