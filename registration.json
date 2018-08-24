@@ -1,0 +1,16 @@
+{
+  "name": "Presence detector",
+  "description": "Presence detector appartment",
+  "environment_variables": {
+    "1ec3b2ba-a558-11e8-98d0-529269fb1459": {
+      "name": "Presence",
+      "description": "....",
+      "unit": "N/A",
+      "value": {
+        "type": "discrete",
+        "possible_values": ["true", "false"],
+        "current_value": "false"
+      }
+    }
+  }
+}
