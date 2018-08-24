@@ -54,7 +54,8 @@ function onSocketConnection() {
 }
 
 sendUpdate = function(data) {
-  console.log("Send update to main server => " + data);
+  console.log("Send update to main server => ");
+  console.log(data);
   const variable = ("" + data).split("/#/")[0];
   const value = ("" + data).split("/#/")[1];
   let jsonData = {
