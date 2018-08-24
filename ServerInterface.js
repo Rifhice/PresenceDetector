@@ -36,7 +36,7 @@ function onConnection(data) {
 }
 
 function unknowAction(data) {
-  console.log("Unknown action");
+  console.log("Unknown action => " + data);
 }
 
 function onSocketConnection() {
