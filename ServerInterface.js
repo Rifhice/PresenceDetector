@@ -11,7 +11,7 @@ socket.connect(
   config.Server_Port,
   config.Server_Ip
 );
-
+console.log(config.Server_Ip, config.Server_Port);
 const action = {
   registration: onRegistration,
   connection: onConnection
